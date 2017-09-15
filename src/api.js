@@ -9,6 +9,7 @@ const Api = {
 };
 
 Api.initP;
+Api.broadcast = true;
 var isDebug = false;
 
 Api.init = (networkName) => {
@@ -17,6 +18,10 @@ Api.init = (networkName) => {
 
 Api.setDebug = (debug) => {
     isDebug = debug;
+};
+
+Api.broadcastTxs = (broadcast) => {
+    Api.broadcast = broadcast;
 };
 
 Api.useNet = (netName) => {

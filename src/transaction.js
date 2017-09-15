@@ -53,7 +53,8 @@ Transaction.sendTransactions = (transactions, callback) => {
 
         Api.post(params, callback);
 
-        broadcastTransactions(params, Api.seeds);
+        if(Api.broadcast)
+            broadcastTransactions(params, Api.seeds);
     });
 };
 

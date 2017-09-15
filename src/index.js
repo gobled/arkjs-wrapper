@@ -11,6 +11,7 @@ module.exports = {
     init: Api.init,
     setDebug: Api.setDebug,
     setPreferredNode: Api.setPreferredNode,
+    broadcastTxs: Api.broadcastTxs,
 
     // Account
     getBalance: Account.getBalance,

@@ -30,17 +30,19 @@ Api.useNet = (netName) => {
             reject("Network name doesn't exist");
 
         var netSeeds = seeds[netName].map((seed) => `${seed}:${netName == "main" ? 4001 : 4002}`);
-        Api.node = netSeeds[Math.floor(Math.random() * netSeeds.length)];
+        if(Api.node == null)
+            Api.node = netSeeds[Math.floor(Math.random() * netSeeds.length)];
         Api.seeds = netSeeds;
 
         Api.get({url: `${Api.node}/api/blocks/getNetHash`, json: true}, (err, succ, resp) => {
             if(resp && resp.success)
             {
                 Api.hash = resp.nethash;
+                console.log("Nethash: " + Api.hash);
                 Api.get({url: `${Api.node}/api/peers`, json: true}, (err, success, response) => {
                     if(response != null && response.success)
                     {
-                        Api.peers = response.peers.filter((peer) => peer.status == "OK");
+                        Api.peers = response.peers.filter((peer) => peer.status == "OK" && peer.errors == 0);
                         resolve();
                     }
                     else

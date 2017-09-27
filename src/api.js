@@ -42,7 +42,8 @@ Api.useNet = (netName) => {
                 Api.get({url: `${Api.node}/api/peers`, json: true}, (err, success, response) => {
                     if(response != null && response.success)
                     {
-                        Api.peers = response.peers.filter((peer) => peer.status == "OK" && peer.errors == 0);
+                        Api.peers = response.peers.filter((peer) => peer.status == "OK" && peer.errors == 0)
+                                                  .map((p) => `${p.ip}:${netName == "main" ? 4001 : 4002}`);
                         resolve();
                     }
                     else

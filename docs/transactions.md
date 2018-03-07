@@ -120,7 +120,7 @@ arkApi.getTransactionsList(parameters, (error, success, response) => {
         asset: Asset (Object),
         confirmations: Number of confirmations (Integer)
     }
-    ...
+    count: Number of results (String)
   ]
 }
 ```

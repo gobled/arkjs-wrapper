@@ -43,7 +43,7 @@ Api.useNet = (netName) => {
                     if(response != null && response.success)
                     {
                         Api.peers = response.peers.filter((peer) => peer.status == "OK" && peer.errors == 0)
-                                                  .map((p) => `${p.ip}:${netName == "main" ? 4001 : 4002}`);
+                                                  .map((p) => `${p.ip}:${netName == "main" ? 5500 : 5501}`);
                         resolve();
                     }
                     else
@@ -57,7 +57,7 @@ Api.useNet = (netName) => {
 };
 
 Api.setPreferredNode = (prefNode, main = true) => {
-    Api.node = `${prefNode}:${main ? 4001 : 4002}`;
+    Api.node = `${prefNode}:${main ? 5500 : 5501}`;
 };
 
 Api.get = (config, callback) => {

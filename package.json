@@ -1,22 +1,22 @@
 {
   "name": "ark-api",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A Node.JS module which provides a wrapper for the Ark API.",
   "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eugeneli/arkjs-wrapper.git"
+    "url": "git+https://github.com/gobled/arkjs-wrapper.git"
   },
   "keywords": [
-    "Ark",
-    "API",
-    "Node.js",
-    "Arkjs"
+    "ripa",
+    "api",
+    "node.js",
+    "ripajs"
   ],
   "author": "vrlc92 <vrlc92@gmail.com> (https://br.linkedin.com/in/vrlc92), Eugene Li <hello@itseugene.li>",
   "license": "MIT",
   "dependencies": {
-    "arkjs": "^0.2.0",
+    "ripajs": "^0.2.1",
     "bigi": "^1.4.2",
     "bignumber.js": "^4.0.2",
     "bip66": "^1.1.5",

@@ -1,4 +1,4 @@
-const ark = require("arkjs");
+const ark = require("ripajs");
 const Api = require("./api.js");
 
 const Transaction = {};
@@ -44,7 +44,7 @@ Transaction.sendTransactions = (transactions, callback) => {
             json: { transactions: transactions },
             headers: {
                 "Content-Type": "application/json",
-                "os": "node-arkjs",
+                "os": "node-ripajs",
                 "version": "0.3.0",
                 "port": 1,
                 "nethash": Api.hash

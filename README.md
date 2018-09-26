@@ -1,4 +1,4 @@
-# ark-api
+# ripa-api
 
 [![Build Status](https://travis-ci.org/ArkEcosystem/ark-api.svg?branch=master)](https://travis-ci.org/ArkEcosystem/ark-api)
 
@@ -32,7 +32,7 @@ arkApi.init(network);
 This documentation is based on: https://github.com/LiskHQ/lisk-docs/blob/development/APIReference.md
 
 MIT License
-
+Copyright (c) 2018 Ripa 
 Copyright (c) 2016 Ark  
 Copyright (c) 2016 Lisk
 

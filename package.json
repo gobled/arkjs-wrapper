@@ -1,11 +1,11 @@
 {
-  "name": "ark-api",
+  "name": "ripa-api",
   "version": "1.2.1",
-  "description": "A Node.JS module which provides a wrapper for the Ark API.",
+  "description": "A Node.JS module which provides a wrapper for the Ripa API.",
   "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gobled/arkjs-wrapper.git"
+    "url": "git+https://github.com/gobled/ripajs-wrapper.git"
   },
   "keywords": [
     "ripa",
@@ -13,7 +13,7 @@
     "node.js",
     "ripajs"
   ],
-  "author": "vrlc92 <vrlc92@gmail.com> (https://br.linkedin.com/in/vrlc92), Eugene Li <hello@itseugene.li>",
+  "author": "vrlc92 <vrlc92@gmail.com> (https://br.linkedin.com/in/vrlc92), Eugene Li <hello@itseugene.li>, gobled <gobled@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "ripajs": "^0.2.1",
